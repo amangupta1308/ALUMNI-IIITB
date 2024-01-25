@@ -19,6 +19,8 @@ export const login_profile = async(obj) => {
     });
 
     const ans = await res.json();
+    // console.log(ans);
+    // localStorage.setItem('token', ans.token);
     return ans;
 }
 
